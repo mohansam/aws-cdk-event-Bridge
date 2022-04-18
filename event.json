@@ -1,0 +1,45 @@
+{
+    "version": "0",
+    "id": "a5a14686-46f3-1bc1-0c16-14518041791b",
+    "detail-type": "Lambda Function Invocation Result - Success",
+    "source": "lambda",
+    "account": "",
+    "time": "2022-04-16T07:24:39Z",
+    "region": "ap-south-1",
+    "resources": [
+        "arn:aws:events:ap-south-1::event-bus/default",
+        "arn:aws:lambda:ap-south-1::function:EventbridgeStack-eventBridgeTestFunEBCB475E-nkwzq7RkRTvd:$LATEST"
+    ],
+    "detail": {
+        "version": "1.0",
+        "timestamp": "2022-04-16T07:24:39.888Z",
+        "requestContext": {
+            "requestId": "744ff02b-494a-4227-905e-a49ad1b2dddf",
+            "functionArn": "arn:aws:lambda:ap-south-1::function:EventbridgeStack-eventBridgeTestFunEBCB475E-nkwzq7RkRTvd:$LATEST",
+            "condition": "Success",
+            "approximateInvokeCount": 1
+        },
+        "requestPayload": {
+            "version": "0",
+            "id": "c2fcd471-1ede-c1d5-528a-ff0968d28f0a",
+            "detail-type": "check",
+            "source": "test-rule",
+            "account": "",
+            "time": "2022-04-16T07:24:38Z",
+            "region": "ap-south-1",
+            "resources": [],
+            "detail": {
+                "hi": "nnn"
+            }
+        },
+        "responseContext": {
+            "statusCode": 200,
+            "executedVersion": "$LATEST"
+        },
+        "responsePayload": {
+            "source": "cdkpatterns.the-destined-lambda",
+            "action": "message",
+            "message": "hello world"
+        }
+    }
+}
